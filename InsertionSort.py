@@ -2,7 +2,7 @@
 
 
 # Space complexity = O(1)
-def insertion_sort(n_input):
+def insertion_sort(n_input,*args):
     "It will compare A[i] with A[j] if A[j]>A[i] will swap it"
     for j in range(1, len(n_input)):
         key = n_input[j]  # To hold the value in case of swaping
