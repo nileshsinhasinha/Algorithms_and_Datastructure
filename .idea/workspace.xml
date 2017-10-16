@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9855db79-ba99-481a-ab1f-edaec9c12112" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuickSort.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MergeSort.py" afterPath="$PROJECT_DIR$/MergeSort.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpaceComplexity.py" afterPath="$PROJECT_DIR$/SpaceComplexity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TimeComplexity.py" afterPath="$PROJECT_DIR$/TimeComplexity.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -281,7 +276,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit-14-10-2017:14:16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit-14-10-2017:14:16" />
+    <MESSAGE value="Commit-16-10-2017:14:27" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit-16-10-2017:14:27" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
