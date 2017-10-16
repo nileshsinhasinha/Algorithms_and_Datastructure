@@ -14,5 +14,8 @@ def timecomplexity(fn):
         Time_per_input_Y.append(timeit.timeit(stmt=s,globals=globals(),number=1000))#Multiplying seconds with 1000 = ms
     GraphicalAnalysis.singlegraph(Input_X,Time_per_input_Y,y_label='Time-->ms',title='Time Complexity')
 
-import InsertionSort
-timecomplexity('InsertionSort.insertion_sort')
+#import InsertionSort
+#timecomplexity('InsertionSort.insertion_sort')
+
+import MergeSort
+timecomplexity('MergeSort.mergesort')
