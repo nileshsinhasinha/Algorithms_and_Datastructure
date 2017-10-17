@@ -1,41 +1,38 @@
-def partition(arr):
-    if len(arr)<2:
-        return 0
+def partition(arr, left_index, right_index):
+    """Picks the last element as pivot and partition the element around
+    pivot(left side -->less than equal to pivot
+          right side --> greater than equal to pivot)"""
 
-    x_pivot = arr[len(arr)-1]
+    x_pivot = arr[right_index]
+    i_left = left_index
 
-    i_left=-1
-
-    for j_right in range(len(arr)-1):
+    for j_right in range(left_index, right_index):
         if arr[j_right] <= x_pivot:
-            i_left+=1
-            intmdt=arr[i_left]
-            arr[i_left]=arr[j_right]
-            arr[j_right]=intmdt
+            arr[i_left],arr[j_right] = arr[j_right],arr[i_left]
+            i_left += 1
 
-    intmdt=arr[i_left+1]
-    arr[i_left+1]=x_pivot
-    arr[len(arr)-1] = intmdt
-    return i_left+1
+    arr[i_left],arr[right_index] = x_pivot,arr[i_left]
+    return i_left
 
-#print(partition([5]))
+
+def quicksort_main(arr, left, right):
+    """
+    Quick sort method (Recursive)
+    """
+    if (right-left) > 0:
+        # Get pivot
+        piv = partition(arr, left, right)
+        # Sort left side of pivot
+        quicksort_main(arr, left, piv - 1)
+        # Sort right side of pivot
+        quicksort_main(arr, piv + 1, right)
 
 def quicksort(arr):
-    #print('L>>{}'.format(len(arr)))
-    if len(arr)>0:
-            #return arr
-
-        q=partition(arr)
-        #print('Q>>{}'.format(q))
-        quicksort(arr[:q])
-        #print(arr)
-        quicksort(arr[(q+1):])
-        #print(arr)
+    """To call the function with single parameter array"""
+    left=0
+    right=len(arr)-1
+    quicksort_main(arr,left,right)
     return arr
 
 if __name__ == "__main__":
-    print(quicksort([6,9,5,0]))
-
-print(partition([6,5,0,8]))
-
-
+    print(quicksort([6,2]))

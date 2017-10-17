@@ -13,7 +13,7 @@ def space_complexity(fn):
 
     Input_X = []
     Space_per_input_Y = []
-    for i in range(10,1001,10):
+    for i in range(10,1001,100):
         N_input=[]
         M=0
         for j in range(i):
@@ -27,11 +27,14 @@ def space_complexity(fn):
         Space_per_input_Y.append((M))
     GraphicalAnalysis.singlegraph(Input_X,Space_per_input_Y,y_label='Space-->Bytes',title='Space Complexity')
 
-import InsertionSort
-space_complexity(InsertionSort.insertion_sort)
+# import InsertionSort
+# space_complexity(InsertionSort.insertion_sort)
+#
+# import MergeSort
+# space_complexity(MergeSort.mergesort)
 
-import MergeSort
-space_complexity(MergeSort.mergesort)
+import QuickSort
+space_complexity(QuickSort.quicksort)
 
 # m1=memory_usage()
 # g=[i for i in range(1)]
