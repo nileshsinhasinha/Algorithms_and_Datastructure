@@ -20,5 +20,8 @@ def timecomplexity(fn):
 #import MergeSort
 #timecomplexity('MergeSort.mergesort')
 
-import QuickSort
-timecomplexity('QuickSort.quicksort')
+# import QuickSort
+# timecomplexity('QuickSort.quicksort')
+
+import HeapSort
+timecomplexity('HeapSort.heapsort')
