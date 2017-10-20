@@ -16,6 +16,6 @@ def heapsort(Arr):
         #print('MH3>>{}{}'.format(Arr,new_arr))
 
 if __name__ == "__main__":
-    l=[1,2,6,8,12,14,16,9]
+    l=[40,30,20,10,15,16,17,8,4]
     heapsort(l)
     print(l)

@@ -23,5 +23,8 @@ def timecomplexity(fn):
 # import QuickSort
 # timecomplexity('QuickSort.quicksort')
 
-import HeapSort
-timecomplexity('HeapSort.heapsort')
+# import HeapSort
+# timecomplexity('HeapSort.heapsort')
+
+import BubbleSort
+timecomplexity('BubbleSort.bubble_sort')

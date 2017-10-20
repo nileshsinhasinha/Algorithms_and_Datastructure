@@ -36,9 +36,11 @@ def space_complexity(fn):
 # import QuickSort
 # space_complexity(QuickSort.quicksort)
 
-import HeapSort
-space_complexity(HeapSort.heapsort)
+# import HeapSort
+# space_complexity(HeapSort.heapsort)
 
+import BubbleSort
+space_complexity(BubbleSort.bubble_sort)
 
 # m1=memory_usage()
 # g=[i for i in range(1)]

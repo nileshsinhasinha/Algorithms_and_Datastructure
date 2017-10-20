@@ -60,11 +60,11 @@ def insert_heap_node(Arr,value):
         Arr[math.ceil(new_node/2)-1],Arr[new_node]=Arr[new_node],Arr[math.ceil(new_node/2)-1]
         new_node=math.ceil(new_node/2)-1
 
-# l=[1,5,6,8,12,14,16]
-# #max_heapify(l,0)
-# build_max_heap(l)
+l=[100,99,88,98,97,79,92,96,95,94,93,49,48,39,38]
+#max_heapify(l,0)
+build_max_heap(l)
 # print(l)
 # #print(delete_max_heap_value(l))
 # #increase_heap_node_value(l,5,100)
-# insert_heap_node(l,9)
-# print(l)
+# insert_heap_node(l,35)
+print(l)
